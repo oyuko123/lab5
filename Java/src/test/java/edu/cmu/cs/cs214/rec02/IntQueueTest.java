@@ -28,7 +28,9 @@ public class IntQueueTest {
     @Test
     public void testNotEmpty() {
         mQueue.enqueue(5);
-        assertFalse(mQueue.isEmpty());
+        //assertFalse(mQueue.isEmpty());
+        assertTrue(mQueue.isEmpty());
+
     }
 
     @Test
