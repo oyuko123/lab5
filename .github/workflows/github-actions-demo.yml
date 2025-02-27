@@ -22,3 +22,10 @@ jobs:
         run: ls ${{ github.workspace }}
 
       - run: echo "🍏 This job's status is ${{ job.status }}."
+      
+
+      -name: built with maven
+       run: mvn clean
+
+      -name: run test
+       run: mvn test
